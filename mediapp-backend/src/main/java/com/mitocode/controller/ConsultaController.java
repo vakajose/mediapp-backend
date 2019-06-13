@@ -42,6 +42,7 @@ public class ConsultaController {
 		return ResponseEntity.created(location).build();
 	}
 	
+	
 	@GetMapping(value = "/hateoas", produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<ConsultaDTO> listarHateoas() {
 		List<Consulta> consultas = new ArrayList<>();
